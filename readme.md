@@ -7,6 +7,8 @@
 
 * [quantum key distribution](#quantum-key-distribution)
   * [BB84 protocol](#bb84-protocol)
+    * [prerequisites Alice](#prerequisites-alice)
+    * [prerequisites Bob](#prerequisites-bob)
 * [links](#links)
 
 <!-- vim-markdown-toc -->
@@ -31,6 +33,8 @@ Basic order of events:
 * this scheme can use any quantum object with a two value observeable
 * in practice the quantum object is the **polarization of a photon**
 
+### prerequisites Alice
+
 Alice has a source to generate photons with four possible polarizations:
 
 1. **H**, horizontal
@@ -38,12 +42,27 @@ Alice has a source to generate photons with four possible polarizations:
 3. **L**, left
 4. **R**, right
 
-The H and V set is located along the X and Y axis. The L and R set 45 degrees rotated from that.
+The four polarizations can be grouped into two sets.
+The **HV set** is located along the X and Y axis. The **LR set** 45 degrees rotated from that.
 
 > polarizations.jpg
-
 <img src="media/polarizations.jpg"></img>
 
+
+### prerequisites Bob
+
+Bob has two polarization beam splitters. One oriented at 0 degrees (vertical) and one at 45 degres (diagonal).
+
+The **vertical beam splitter** can analyze photons of the HV set. The **diagonal beam splitter** can analyze photons of the LR set.
+
+
+Each beam splitter can produce two values.
+* Vertical beam splitter:
+  1. **H**, horizontal
+  2. **V**, vertical
+* Diagonal beam splitter:
+  1. **L**, left
+  2. **R**, right
 # links
 
 * [Quantum Optics – Quantum cryptography the BB84 QKD scheme (YouTube)](https://www.youtube.com/watch?v=MlsrCzDdAbE)
