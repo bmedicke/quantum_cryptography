@@ -31,8 +31,6 @@ Basic order of events:
 * this scheme can use any quantum object with a two value observeable
 * in practice the quantum object is the **polarization of a photon**
 
----
-
 Alice has a source to generate photons with four possible polarizations:
 
 1. **H**, horizontal
