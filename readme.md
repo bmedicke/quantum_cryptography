@@ -40,10 +40,10 @@ Alice has a source to generate photons with four possible polarizations:
 
 H and V are along the X and Y axis. L and R 45 degrees rotated from that.
 
+> polarizations.jpg
+
 <img src="media/polarizations.jpg"></img>
 
 # links
 
 * [Quantum Optics – Quantum cryptography the BB84 QKD scheme (YouTube)](https://www.youtube.com/watch?v=MlsrCzDdAbE)
-
-
