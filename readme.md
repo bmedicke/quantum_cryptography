@@ -22,7 +22,7 @@ Basic order of events:
 
 * after sharing the key a test if performed:
   * if anybody was listening the key is discarded
-  * if not they have a new key to communicate with
+  * if not they now have a new key to communicate with
 * the reason why this works is because **any measurement on a quantum object leaves a trace**
   * it is impossible to read information traveling over a quantom channel without perturbing it
 
@@ -38,7 +38,7 @@ Alice has a source to generate photons with four possible polarizations:
 3. **L**, left
 4. **R**, right
 
-H and V are along the X and Y axis. L and R 45 degrees rotated from that.
+The H and V set is located along the X and Y axis. The L and R set 45 degrees rotated from that.
 
 > polarizations.jpg
 
