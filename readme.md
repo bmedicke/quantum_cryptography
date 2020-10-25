@@ -65,11 +65,11 @@ Each beam splitter can produce two values.
 
 ---
 
-To obtain the orinal value of a photon the orientations of Alice and Bob have to match up. Some examples:
+To obtain the orinal value of a photon (without fail) the orientations of Alice and Bob have to match up. Some examples:
 
-* inputting H into the diagonal beam splitter will return H (match)
-* inputting V into the diagonal beam splitter will return V (match)
-* inputting L or R into the diagonal beam splitter will return a random value (H or V, mismatch)
+* inputting H into the vertical beam splitter will always return H (match)
+* inputting V into the vertical beam splitter will always return V (match)
+* **inputting L or R into the vertical beam splitter will return a random value (H or V, mismatch)**
 
 ### procedure of events
 
