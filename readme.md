@@ -2,14 +2,12 @@
 
 ## toc
 
-
 <!-- vim-markdown-toc GFM -->
 
 * [quantum key distribution](#quantum-key-distribution)
   * [BB84 protocol](#bb84-protocol)
     * [prerequisites Alice](#prerequisites-alice)
     * [prerequisites Bob](#prerequisites-bob)
-* [links](#links)
 
 <!-- vim-markdown-toc -->
 
@@ -63,6 +61,4 @@ Each beam splitter can produce two values.
 * Diagonal beam splitter:
   1. **L**, left
   2. **R**, right
-# links
 
-* [Quantum Optics – Quantum cryptography the BB84 QKD scheme (YouTube)](https://www.youtube.com/watch?v=MlsrCzDdAbE)
