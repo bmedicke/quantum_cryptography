@@ -109,3 +109,10 @@ _This is where the quantum nature of the transmission medium kicks in:_
     * 50% chance that Eve chooses the wrong orientation set and 50% chance of that for a wrong value
 
 This entire scheme is based on the fact that you can not find out the basis of polarization of a single photon.
+
+---
+
+A couple of example scenarios:
+
+> eve.jpg
+<img src="media/eve.jpg"></img>
