@@ -78,7 +78,7 @@ For each (potential) bit of the key the following happens:
 
 * Alice generates a randomly polarized photon (H, V, L or R) and publicly sends it to Bob
 * Bob choses a random beam splitter to analyze the photon with
-  * if Bob chose the right beam splitter: he obtains the original value
+  * if Bob chose the correct beam splitter: he obtains the original value
   * if Bob chose the wrong beam splitter: he obtains a random value
 * Bob saves the orientation of the beam splitter and the resulting value 
   * of which he still does not know if it's meaningful
@@ -100,7 +100,7 @@ Bits of the key and publicly sending them back to Alice!**
 _This is where the quantum nature of the transmission medium kicks in:_
 
 * Eve does not know the correct orientation (vertical or diagonal) and thus has to guess
-  * if Eve guesses right she has no problem
+  * if Eve guesses correctly she has no problem
     * the orientations match up and Bob will get the correct value
   * if Eve guesses wrong there is a 50% chance that Bob will receive the wrong value
     * if Bob randomly chooses this Bit to sacrifice (and send it back to Alice) she has a problem indeed
