@@ -104,7 +104,7 @@ _This is where the quantum nature of the transmission medium kicks in:_
     * the orientations match up and Bob will get the correct value
   * if Eve guesses wrong there is a 50% chance that Bob will receive the wrong value
     * if Bob randomly chooses this Bit to sacrifice (and send it back to Alice) she has a problem indeed
-* **Alice sees that Bob sent back a wrong value despite the right orientation! The key cannot be trusted!**
+* **Alice sees that Bob sent back a wrong value despite the correct orientation! The key cannot be trusted!**
   * any one Bit being wrong when eavesdropped will happen in about 25% of the cases
     * 50% chance that Eve chooses the wrong orientation set and 50% chance of that for a wrong value
 
