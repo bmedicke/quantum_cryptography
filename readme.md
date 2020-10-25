@@ -31,7 +31,7 @@ Basic order of events:
 ## BB84 protocol
 
 * this scheme can use any quantum object with a two value observeable
-* in practice the quantum object is the **polarization of a photon**
+* in practice the quantum object is the **polarization of a photon** (quantum optics)
 
 ### prerequisites Alice
 
