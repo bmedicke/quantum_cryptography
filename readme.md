@@ -40,7 +40,7 @@ Alice has a source to generate photons with four possible polarizations:
 3. **L**, left
 4. **R**, right
 
-H and R are along the X and Y axis. L and R 45 degrees rotated from that.
+H and V are along the X and Y axis. L and R 45 degrees rotated from that.
 
 <img src="media/polarizations.jpg"></img>
 
