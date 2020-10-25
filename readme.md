@@ -22,7 +22,7 @@ Basic order of events:
 
 ---
 
-* after sharing the key a test if performed:
+* after sharing the key a test is performed:
   * if anybody was listening the key is discarded
   * if not they now have a new key to communicate with
 * the reason why this works is because **any measurement on a quantum object leaves a trace**
