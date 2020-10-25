@@ -80,7 +80,8 @@ For each (potential) bit of the key the following happens:
   * if Bob chose the right beam splitter: he obtains the original value
   * if Bob chose the wrong beam splitter: he obtains a random value
 * Bob saves the orientation of the beam splitter and the resulting value 
-  * of which he still does not know if it's meaningful (there's a 50% chance it's just a random value)
+  * of which he still does not know if it's meaningful
+  * there's a 50% chance it's just a random value due to orientation mismatch
 
 After sending a bunch of photons we move on to the next step: **reconciliation**.
 
@@ -95,15 +96,15 @@ If Eve intercepts a photon to measure it, Bob will not receive it and thus will 
 Alternatively, Eve can retransmit a photon, but **Bob can detect this by sacrifing some
 Bits of the key and publicly sending them back to Alice!**
 
-_This is where the quantum nature of the transmission channel kicks in:_
+_This is where the quantum nature of the transmission medium kicks in:_
 
 * Eve does not know the correct orientation (vertical or diagonal) and thus has to guess
   * if Eve guesses right she has no problem
     * the orientations match up and Bob will get the correct value
   * if Eve guesses wrong there is a 50% chance that Bob will receive the wrong value
-    * if Bob randomly chooses this Bit to sacrifice (and send back to Alice) she has a problem indeed
-* **Alice sees that Bob sent back a wrong value, even though he chose the right orientation!**
-  * this will happen in about 25% of the cases
-    * 50% chance that Eve chooses the wrong set and 50% chance of that for a wrong value
+    * if Bob randomly chooses this Bit to sacrifice (and send it back to Alice) she has a problem indeed
+* **Alice sees that Bob sent back a wrong value despite the right orientation! The key cannot be trusted!**
+  * any one Bit being wrong when eavesdropped will happen in about 25% of the cases
+    * 50% chance that Eve chooses the wrong orientation set and 50% chance of that for a wrong value
 
 This entire scheme is based on the fact that you can not find out the basis of polarization of a single photon.
