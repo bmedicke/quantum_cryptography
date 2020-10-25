@@ -117,11 +117,11 @@ A couple of example scenarios:
 > eve.jpg
 <img src="media/eve.jpg"></img>
 
-* Alice always send `V`
-* In the first case Eve and Bob select a vertical splitter, eavesdropping takes place but is not detected
-* In the second case Alice and Bob have an orientation mismatch, the value is discarded
-  * Eve does not matter
-* In the third case Bob chose the correct and Eve the wrong orientation
-  * Eve is unlucky and the result is `H` instead of `V`
+* To keep it simple Alice always send `V`.
+* In the first case Eve and Bob select a vertical splitter, eavesdropping takes place but is not detected.
+* In the second case Alice and Bob have an orientation mismatch, the value is discarded.
+  * Eve does not matter.
+* In the third case Bob chose the correct and Eve the wrong orientation.
+  * Eve is unlucky and the result is `H` instead of `V`.
   * Bob and Alice chose the same orientation but they still got differing values!
-    * when Bob sends this Bit to Alice they immediately know someone was eavesdropping
+    * If Bob sacrifices this Bit and sends it to Alice they immediately know someone was eavesdropping.
