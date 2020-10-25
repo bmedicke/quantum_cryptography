@@ -10,6 +10,7 @@
     * [prerequisites Bob](#prerequisites-bob)
     * [procedure of events](#procedure-of-events)
     * [consequences of eavesdropping](#consequences-of-eavesdropping)
+* [sources and further reading](#sources-and-further-reading)
 
 <!-- vim-markdown-toc -->
 
@@ -125,3 +126,7 @@ A couple of example scenarios:
   * Eve is unlucky and the result is `H` instead of `V`.
   * Bob and Alice chose the same orientation but they still got differing values!
     * If Bob sacrifices this Bit and sends it to Alice they immediately know someone was eavesdropping.
+
+# sources and further reading
+
+* https://en.wikipedia.org/wiki/No-cloning_theorem
