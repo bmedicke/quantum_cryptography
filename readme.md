@@ -63,9 +63,8 @@ Each beam splitter can produce two values.
   1. **L**, left
   2. **R**, right
 
+> beam-splitter.jpg
 <img src="media/beam-splitter.jpg" max-width=600></img>
-
----
 
 To obtain the orinal value of a photon (without fail) the orientations of Alice and Bob have to match up. Some examples:
 
