@@ -4,6 +4,12 @@
 
 * [Kanban](https://github.com/bmedicke/quantum_cryptography/projects/1) 📝
 
+## contributors
+
+* Ferdi Cevik, https://github.com/Osomo3000
+* Manuel Nagel, https://github.com/namanuel
+* Nikolai Benedikt, https://github.com/nikobenedikt
+
 ## data
 
 * [Theory](theory.md) 💭 describes the theory behind the BB84 algorithm
