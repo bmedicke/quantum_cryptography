@@ -16,6 +16,10 @@
 | Manuel Nagel     | [namanuel](https://github.com/namanuel)         |
 | Nikolai Benedikt | [nikobenedikt](https://github.com/nikobenedikt) |
 
+## current hardware setup
+
+TODO: add photo
+
 ## data
 
 * [Theory](theory.md) 💭 describes the theory behind the BB84 algorithm
