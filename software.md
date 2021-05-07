@@ -31,7 +31,6 @@ python3.9 -c 'import ssl;print(ssl.OPENSSL_VERSION)'
 
 Depending on your OS the `python3.9` binary might be called `python3` or
 `python`. Check that you have the right version with the `--version` flag.
-Similarly `pip3.9` might be called `pip` or `pip3`, again check with the `--version` flag.
 
 ```sh
 # clone the repo:
