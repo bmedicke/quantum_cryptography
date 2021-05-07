@@ -50,6 +50,9 @@ source env/bin/activate
 pip3.9 install wheel
 pip3.9 install -r requirements.txt
 
+# enable the I2C interface:
+sudo raspi-config
+# Interfacing options → I2C → yes.
 ```
 
 **While working in an activated virtual environment you can always simply use `python` and `pip`.**
