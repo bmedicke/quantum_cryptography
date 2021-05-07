@@ -12,6 +12,7 @@
 * source the virtual environment with `source env/bin/activate`
   * you can deactivate the venv with `venv`
 * install dependencies `pip3 install -r requirements.txt`
+* to update the requirements file run `pip3 freeze > requirements.txt`
 
 # libraries
 
