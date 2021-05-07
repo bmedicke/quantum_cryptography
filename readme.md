@@ -1,4 +1,4 @@
-![Method Draw Image (2)](https://user-images.githubusercontent.com/173962/117496289-1f896880-af77-11eb-950d-06fcd10b5ad3.png)
+![quantum cryptography logo](media/logo-00.png)
 
 # BB84 Quantum Cryptography Demo
 
