@@ -28,6 +28,11 @@ Demonstration of quantum-cryptography-based one-time pad communication via<br>th
 | Manuel Nagel     | [namanuel](https://github.com/namanuel)         |
 | Nikolai Benedikt | [nikobenedikt](https://github.com/nikobenedikt) |
 
+When pair-programming trail the commit message with:<br>
+`Co-authored-by: Name <name@example.com>`.
+
+See [Creating co-authored commits on GitHub](https://docs.github.com/en/github/committing-changes-to-your-project/creating-a-commit-with-multiple-authors#creating-co-authored-commits-on-github) for details.
+
 ## current hardware setup
 
 TODO: add photo
