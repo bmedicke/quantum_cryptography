@@ -15,6 +15,7 @@
 * [Theory](theory.md) 💭 describes the theory behind the BB84 algorithm
 * [Hardware](hardware.md) 🔭 collects information about the hardware setup (filter orientation, etc.) and used hardware
 * [Software](software.md) 🧑🏻‍💻 setup instructions, collection of potentially useful libraries
+* [Notebooks](notebooks/readme.md) 🪐 contains the Jupyter Notebooks for Alice, Bob and Eve
 
 ## whiteboard
 
