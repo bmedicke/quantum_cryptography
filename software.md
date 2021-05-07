@@ -5,6 +5,33 @@
   * [venv](https://docs.python.org/3/library/venv.html) virtual environment
 * Jupyter Lab notebook for Web UI
 
+# Raspbian setup
+
+```sh
+# check current Python version:
+
+python3 --version
+
+# get Python 3.9 or newer:
+
+sudo apt update
+sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libssl-dev libffi-dev
+
+wget https://www.python.org/ftp/python/3.9.5/Python-3.9.5.tgz # or newer.
+tar -xf Python-*
+rm Python-*.tgz
+
+cd Python-*/
+
+# these might take a while.
+./configure --enable-optimizations && make -j 5 # ~ number of cores +1.
+sudo make altinstall # altinstall leaves the original install alone.
+
+# check if it worked:
+python3.9 --version
+python3.9 -c 'import ssl;print(ssl.OPENSSL_VERSION)'
+```
+
 # getting started with the notebooks
 
 Depending on your OS the `python3.9` binary might be called `python3` or
