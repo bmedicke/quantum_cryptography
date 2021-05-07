@@ -7,6 +7,10 @@
 
 # getting started with the notebooks
 
+Depending on your OS the `python3.9` binary might be called `python3` or
+`python`. Check that you have the right version with the `--version` flag.
+Similarly `pip3` might be called `pip`, again check with the `--version` flag.
+
 * clone the repo
 * switch to `notebooks` folder
 * create a virtual environment with `python3.9 -m venv env`
