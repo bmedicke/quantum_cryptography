@@ -9,15 +9,14 @@
 
 Depending on your OS the `python3.9` binary might be called `python3` or
 `python`. Check that you have the right version with the `--version` flag.
-Similarly `pip3` might be called `pip`, again check with the `--version` flag.
+Similarly `pip3.9` might be called `pip` or `pip3`, again check with the `--version` flag.
 
 * clone the repo
 * switch to `notebooks` folder
 * create a virtual environment with `python3.9 -m venv env`
 * source the virtual environment with `source env/bin/activate`
   * you can deactivate the venv with `venv`
-* install dependencies `pip3 install -r requirements.txt`
-* to update the requirements file run `pip3 freeze > requirements.txt`
+* install dependencies `pip3.9 install -r requirements.txt`
 * start the notebook with `jupyter notebook`
 
 While working with an activated virtual environment you should always
