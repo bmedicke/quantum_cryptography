@@ -1,6 +1,6 @@
 # notes
 
-## filter wheel orientation measurements
+## filter wheel polarization-orientation measurements
 
 | Alice    | Bob     | measurement in microwatt |
 | ---      | ---     | ---                      |
