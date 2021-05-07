@@ -6,7 +6,7 @@ Demonstration of quantum-cryptography-based one-time pad communication via<br>th
 
 <!-- vim-markdown-toc GFM -->
 
-* [project](#project)
+* [project progress](#project-progress)
 * [contributors](#contributors)
 * [current hardware setup](#current-hardware-setup)
 * [repo structure](#repo-structure)
@@ -14,7 +14,7 @@ Demonstration of quantum-cryptography-based one-time pad communication via<br>th
 
 <!-- vim-markdown-toc -->
 
-## project
+## project progress
 
 * [Kanban Board](https://github.com/bmedicke/quantum_cryptography/projects/1?fullscreen=true) 📝
 * [Milestones](https://github.com/bmedicke/quantum_cryptography/milestones) 🗿
