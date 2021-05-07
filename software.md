@@ -12,7 +12,7 @@
 
 python3 --version # we need at least 3.9.
 
-# get Python 3.9 or newer:
+# build Python 3.9 or newer from source:
 
 sudo apt update
 sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libssl-dev libffi-dev
