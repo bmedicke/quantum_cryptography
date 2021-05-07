@@ -11,14 +11,14 @@
 # check current Python version:
 python3 --version # we need at least 3.9.
 
-# build Python 3.9 or newer from source:
+# build a newer Python version from source.
 sudo apt update
 sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libssl-dev libffi-dev libsqlite3-dev
 
 wget https://www.python.org/ftp/python/3.9.5/Python-3.9.5.tgz # or newer.
 tar -xf Python-* && cd Python-*/
 
-# these might take a while.
+# these steps might take a while.
 ./configure --enable-optimizations && make -j 5 # ~ number of cores +1.
 sudo make altinstall # altinstall leaves the original install alone.
 
@@ -27,7 +27,7 @@ python3.9 --version
 python3.9 -c 'import ssl;print(ssl.OPENSSL_VERSION)'
 ```
 
-# cloning and starting the notebooks
+# cloning and initial setup
 
 Depending on your OS the `python3.9` binary might be called `python3` or
 `python`. Check that you have the right version with the `--version` flag.
@@ -43,17 +43,24 @@ cd quantum_cryptography/notebooks
 # create a virtual Python environment:
 python3.9 -m venv env
 
-# source the virtual environment.
+# activate the virtual environment.
 source env/bin/activate
-# you have to repeat this step for each new terminal.
-# you can deactivate the venv with: deactivate
 
 # install requirements.
 pip3.9 install wheel
 pip3.9 install -r requirements.txt
 
-# start the notebook:
-jupyter notebook --ip=0.0.0.0 --no-browser
+```
+
+**While working in an activated virtual environment you can always simply use `python` and `pip`.**
+
+# starting the notebook
+
+```sh
+# activate the virtual environment if its not still active.
+source env/bin/activate # you can deactivate the venv with: deactivate
+jupyter notebook --ip=0.0.0.0 --no-browser # start the notebook:
+
 # the first flag binds the programm to all network interfaces so we
 # can connect to the raspberry pi via its public IP address.
 # the second flag prevents a browser from popping up.
@@ -62,8 +69,8 @@ jupyter notebook --ip=0.0.0.0 --no-browser
 # from any browser running on a device in the same network.
 ```
 
-**While working with an activated virtual environment you should always
-be able to simply use `python` and `pip`.**
+All required libraries are installed into the virtual environment.<br>
+**You have to activate the virtual environment before starting a notebook.**
 
 ---
 
