@@ -1,7 +1,7 @@
 # environment
 
-* Python  ≥3.9
-  * macos: `brew install python3`
+* Rasbperry Pi running Raspbian or similar
+* Python  ≥3.9 (required for type hinting)
   * [venv](https://docs.python.org/3/library/venv.html) virtual environment
 * Jupyter Lab notebook for Web UI
 
