@@ -35,7 +35,7 @@ See [Creating co-authored commits on GitHub](https://docs.github.com/en/github/c
 
 ---
 
-Before git-adding changes to Jupyter Notebook click: `Kernel` → `Restart and Clear Output`.
+Before git-adding changes to a Jupyter Notebook click: `Kernel` → `Restart and Clear Output`.
 
 ## current hardware setup
 
