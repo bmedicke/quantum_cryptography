@@ -1,7 +1,7 @@
 # environment
 
-* Python 3.9
-  * macos: `brew install python@3.9`
+* Python  ≥3.9
+  * macos: `brew install python3`
   * [venv](https://docs.python.org/3/library/venv.html) virtual environment
 * Jupyter Lab notebook for Web UI
 
