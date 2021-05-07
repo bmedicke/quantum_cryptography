@@ -33,6 +33,10 @@ When pair-programming trail the commit message with:<br>
 
 See [Creating co-authored commits on GitHub](https://docs.github.com/en/github/committing-changes-to-your-project/creating-a-commit-with-multiple-authors#creating-co-authored-commits-on-github) for details.
 
+---
+
+Before git-adding changes to Jupyter Notebook click: `Kernel` → `Restart and Clear Output`.
+
 ## current hardware setup
 
 ## repo structure
