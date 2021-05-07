@@ -2,7 +2,7 @@
 
 * Rasbperry Pi running Raspbian or similar
 * Python  ≥3.9 (required for type hinting)
-  * [venv](https://docs.python.org/3/library/venv.html) virtual environment
+  * highly recommended: a virtual environment (like [venv](https://docs.python.org/3/library/venv.html))
 * Jupyter Lab notebook for Web UI
 
 # Raspbian setup
@@ -10,7 +10,7 @@
 ```sh
 # check current Python version:
 
-python3 --version
+python3 --version # we need at least 3.9.
 
 # get Python 3.9 or newer:
 
