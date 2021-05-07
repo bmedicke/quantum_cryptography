@@ -1,4 +1,6 @@
-# BB84 Quantum Cryptography Demonstration
+# BB84 Quantum Cryptography Demo
+
+ Demonstration of quantum-cryptography-based one-time pad communication via<br>the BB84 algorithm using a non-single photon source.
 
 ## project
 
