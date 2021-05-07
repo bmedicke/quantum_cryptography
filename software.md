@@ -27,6 +27,7 @@ be able to simply use `python` and `pip`
 
 * https://github.com/johnwargo/seeed-studio-relay-board
   * library to control the seeed relay hat
+  * updated version: https://github.com/johnwargo/seeed-studio-relay-v2
 * https://github.com/jupyter/notebook
   * a web-based notebook environment for interactive computing
   * could be used for our user interface
