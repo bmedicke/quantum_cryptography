@@ -5,10 +5,10 @@
   * [venv](https://docs.python.org/3/library/venv.html) virtual environment
 * Jupyter Lab notebook for Web UI
 
-# getting started with the playground
+# getting started with the notebooks
 
 * clone the repo
-* switch to playground folder
+* switch to `notebooks` folder
 * create a virtual environment with `python3.9 -m venv env`
 * source the virtual environment with `source env/bin/activate`
   * you can deactivate the venv with `venv`
