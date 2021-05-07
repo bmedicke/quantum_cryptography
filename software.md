@@ -9,19 +9,14 @@
 
 ```sh
 # check current Python version:
-
 python3 --version # we need at least 3.9.
 
 # build Python 3.9 or newer from source:
-
 sudo apt update
 sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libssl-dev libffi-dev libsqlite3-dev
 
 wget https://www.python.org/ftp/python/3.9.5/Python-3.9.5.tgz # or newer.
-tar -xf Python-*
-rm Python-*.tgz
-
-cd Python-*/
+tar -xf Python-* && cd Python-*/
 
 # these might take a while.
 ./configure --enable-optimizations && make -j 5 # ~ number of cores +1.
@@ -32,22 +27,31 @@ python3.9 --version
 python3.9 -c 'import ssl;print(ssl.OPENSSL_VERSION)'
 ```
 
-# getting started with the notebooks
+# cloning and starting the notebooks
 
 Depending on your OS the `python3.9` binary might be called `python3` or
 `python`. Check that you have the right version with the `--version` flag.
 Similarly `pip3.9` might be called `pip` or `pip3`, again check with the `--version` flag.
 
-* clone the repo
-* switch to `notebooks` folder
-* create a virtual environment with `python3.9 -m venv env`
-* source the virtual environment with `source env/bin/activate`
-  * you can deactivate the venv with `deactivate`
-* install wheel `pip3.9 install wheel`
-* install dependencies `pip3.9 install -r requirements.txt`
-* start the notebook with: `jupyter notebook --ip=0.0.0.0 --no-browser`
-  * don't open browser and bind to all interfaces
-* access the public URL for your Raspberry Pi
+```sh
+git clone 'git@github.com:bmedicke/quantum_cryptography.git' # or via https.
+cd quantum_cryptography/notebooks
+
+python3.9 -m venv env # create a virtual Python environment.
+source env/bin/activate # source the virtual environment.
+# you can deactivate it again with: deactivate
+
+pip3.9 install wheel # install wheel.
+pip3.9 install -r requirements.txt # install requirements.
+
+jupyter notebook --ip=0.0.0.0 --no-browser # start the notebook.
+# the first flag prevents a browser from popping up,
+# the second flag bind to all network interfaces so we
+# can connect to the raspberry pi via its public IP address.
+
+# now visit the displayed URL with the public IP address
+# from any browser running on a device in the same network.
+```
 
 **While working with an activated virtual environment you should always
 be able to simply use `python` and `pip`.**
