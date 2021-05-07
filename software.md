@@ -29,9 +29,6 @@ python3.9 -c 'import ssl;print(ssl.OPENSSL_VERSION)'
 
 # cloning and initial setup
 
-Depending on your OS the `python3.9` binary might be called `python3` or
-`python`. Check that you have the right version with the `--version` flag.
-
 ```sh
 # clone the repo:
 git clone 'git@github.com:bmedicke/quantum_cryptography.git' # or via https.
