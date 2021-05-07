@@ -36,7 +36,7 @@ git clone 'git@github.com:bmedicke/quantum_cryptography.git' # or via https.
 # switch to the notebooks folder:
 cd quantum_cryptography/notebooks
 
-# create a virtual Python environment:
+# create a virtual Python environment with the new Python:
 python3.9 -m venv env
 
 # activate the virtual environment.
