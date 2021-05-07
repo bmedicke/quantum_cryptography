@@ -2,7 +2,7 @@
 
 ## project
 
-* [Kanban Board](https://github.com/bmedicke/quantum_cryptography/projects/1) 📝
+* [Kanban Board](https://github.com/bmedicke/quantum_cryptography/projects/1?fullscreen=true) 📝
 
 ## contributors
 
