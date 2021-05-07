@@ -8,6 +8,7 @@ Demonstration of quantum-cryptography-based one-time pad communication via<br>th
 
 * [project progress](#project-progress)
 * [contributors](#contributors)
+* [contribution guidelines](#contribution-guidelines)
 * [current hardware setup](#current-hardware-setup)
 * [repo structure](#repo-structure)
 * [whiteboard](#whiteboard)
@@ -27,6 +28,8 @@ Demonstration of quantum-cryptography-based one-time pad communication via<br>th
 | Ferdi Cevik      | [Osomo3000](https://github.com/Osomo3000)       |
 | Manuel Nagel     | [namanuel](https://github.com/namanuel)         |
 | Nikolai Benedikt | [nikobenedikt](https://github.com/nikobenedikt) |
+
+## contribution guidelines
 
 When pair-programming trail the commit message with:<br>
 `Co-authored-by: Name <name@example.com>`.
