@@ -19,8 +19,13 @@ Similarly `pip3.9` might be called `pip` or `pip3`, again check with the `--vers
 * install dependencies `pip3.9 install -r requirements.txt`
 * start the notebook with `jupyter notebook`
 
-While working with an activated virtual environment you should always
-be able to simply use `python` and `pip`.
+**While working with an activated virtual environment you should always
+be able to simply use `python` and `pip`.**
+
+---
+
+To update the requirements file (after addding new libraries to the project)
+run `pip3 freeze > requirements.txt`.
 
 # libraries
 
