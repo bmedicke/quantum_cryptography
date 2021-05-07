@@ -48,7 +48,7 @@ source env/bin/activate
 pip install wheel
 pip install -r requirements.txt
 
-# enable the I2C interface:
+# enable the I2C interface for the relay shield:
 sudo raspi-config
   # Interfacing options → I2C → yes.
 ```
