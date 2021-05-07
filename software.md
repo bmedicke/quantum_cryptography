@@ -20,6 +20,9 @@ Similarly `pip3` might be called `pip`, again check with the `--version` flag.
 * to update the requirements file run `pip3 freeze > requirements.txt`
 * start the notebook with `jupyter notebook`
 
+While working with an activated virtual environment you should always
+be able to simply use `python` and `pip`
+
 # libraries
 
 * https://github.com/johnwargo/seeed-studio-relay-board
