@@ -6,10 +6,12 @@
 
 ## contributors
 
-* Benjamin Medicke, https://github.com/bmedicke
-* Ferdi Cevik, https://github.com/Osomo3000
-* Manuel Nagel, https://github.com/namanuel
-* Nikolai Benedikt, https://github.com/nikobenedikt
+| Author           | GitHub profile                                  |
+|------------------|-------------------------------------------------|
+| Benjamin Medicke | [bmedicke](https://github.com/bmedicke)         |
+| Ferdi Cevik      | [Osomo3000](https://github.com/Osomo3000)       |
+| Manuel Nagel     | [namanuel](https://github.com/namanuel)         |
+| Nikolai Benedikt | [nikobenedikt](https://github.com/nikobenedikt) |
 
 ## data
 
