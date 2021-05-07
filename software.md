@@ -21,7 +21,7 @@ Similarly `pip3` might be called `pip`, again check with the `--version` flag.
 * start the notebook with `jupyter notebook`
 
 While working with an activated virtual environment you should always
-be able to simply use `python` and `pip`
+be able to simply use `python` and `pip`.
 
 # libraries
 
