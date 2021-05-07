@@ -34,20 +34,29 @@ Depending on your OS the `python3.9` binary might be called `python3` or
 Similarly `pip3.9` might be called `pip` or `pip3`, again check with the `--version` flag.
 
 ```sh
+# clone the repo:
 git clone 'git@github.com:bmedicke/quantum_cryptography.git' # or via https.
+
+# switch to the notebooks folder:
 cd quantum_cryptography/notebooks
 
-python3.9 -m venv env # create a virtual Python environment.
-source env/bin/activate # source the virtual environment.
-# you can deactivate it again with: deactivate
+# create a virtual Python environment:
+python3.9 -m venv env
 
-pip3.9 install wheel # install wheel.
-pip3.9 install -r requirements.txt # install requirements.
+# source the virtual environment.
+source env/bin/activate
+# you have to repeat this step for each new terminal.
+# you can deactivate the venv with: deactivate
 
-jupyter notebook --ip=0.0.0.0 --no-browser # start the notebook.
-# the first flag prevents a browser from popping up,
-# the second flag bind to all network interfaces so we
+# install requirements.
+pip3.9 install wheel
+pip3.9 install -r requirements.txt
+
+# start the notebook:
+jupyter notebook --ip=0.0.0.0 --no-browser
+# the first flag binds the programm to all network interfaces so we
 # can connect to the raspberry pi via its public IP address.
+# the second flag prevents a browser from popping up.
 
 # now visit the displayed URL with the public IP address
 # from any browser running on a device in the same network.
