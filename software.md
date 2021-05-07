@@ -45,7 +45,9 @@ Similarly `pip3.9` might be called `pip` or `pip3`, again check with the `--vers
   * you can deactivate the venv with `venv`
 * install wheel `pip3.9 install wheel`
 * install dependencies `pip3.9 install -r requirements.txt`
-* start the notebook with `jupyter notebook`
+* start the notebook with: `jupyter notebook --ip=0.0.0.0 --no-browser`
+  * don't open browser and bind to all interfaces
+* access the public URL for your Raspberry Pi
 
 **While working with an activated virtual environment you should always
 be able to simply use `python` and `pip`.**
