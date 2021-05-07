@@ -8,8 +8,10 @@
 
 * clone the repo
 * switch to playground folder
+* create a virtual environment with `python3 -m venv env`
 * source the virtual environment with `source env/bin/activate`
   * you can deactivate the venv with `venv`
+* install dependencies `pip3 install -r requirements.txt`
 
 # libraries
 
