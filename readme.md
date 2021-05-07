@@ -16,7 +16,7 @@ Demonstration of quantum-cryptography-based one-time pad communication via<br>th
 
 ## project progress
 
-* [Kanban Board](https://github.com/bmedicke/quantum_cryptography/projects/1?fullscreen=true) 📝
+* [Kanban Board](https://github.com/bmedicke/quantum_cryptography/projects/1?fullscreen=true) 📝 ([Ben](https://github.com/bmedicke/quantum_cryptography/projects/1?fullscreen=true&card_filter_query=assignee%3Abmedicke), [Ferdi](https://github.com/bmedicke/quantum_cryptography/projects/1?fullscreen=true&card_filter_query=assignee%3Aosomo3000), [Manu](https://github.com/bmedicke/quantum_cryptography/projects/1?fullscreen=true&card_filter_query=assignee%3Anamanuel), [Niko](https://github.com/bmedicke/quantum_cryptography/projects/1?fullscreen=true&card_filter_query=assignee%3Anikobenedikt))
 * [Milestones](https://github.com/bmedicke/quantum_cryptography/milestones) 🗿
 
 ## contributors
