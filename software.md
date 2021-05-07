@@ -43,6 +43,7 @@ Similarly `pip3.9` might be called `pip` or `pip3`, again check with the `--vers
 * create a virtual environment with `python3.9 -m venv env`
 * source the virtual environment with `source env/bin/activate`
   * you can deactivate the venv with `venv`
+* install wheel `pip3.9 install wheel`
 * install dependencies `pip3.9 install -r requirements.txt`
 * start the notebook with `jupyter notebook`
 
