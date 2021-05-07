@@ -35,8 +35,6 @@ See [Creating co-authored commits on GitHub](https://docs.github.com/en/github/c
 
 ## current hardware setup
 
-TODO: add photo
-
 ## repo structure
 
 * [Theory](theory.md) 💭 describes the theory behind the BB84 algorithm
