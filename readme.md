@@ -9,7 +9,7 @@ Demonstration of quantum-cryptography-based one-time pad communication via<br>th
 * [project](#project)
 * [contributors](#contributors)
 * [current hardware setup](#current-hardware-setup)
-* [data](#data)
+* [repo structure](#repo-structure)
 * [whiteboard](#whiteboard)
 
 <!-- vim-markdown-toc -->
@@ -32,7 +32,7 @@ Demonstration of quantum-cryptography-based one-time pad communication via<br>th
 
 TODO: add photo
 
-## data
+## repo structure
 
 * [Theory](theory.md) 💭 describes the theory behind the BB84 algorithm
 * [Hardware](hardware.md) 🔭 collects information about the hardware setup (filter orientation, etc.) and used hardware
