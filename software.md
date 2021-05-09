@@ -68,7 +68,7 @@ jupyter-lab --ip=0.0.0.0 --no-browser notebooks/ # start JupyterLab.
 ```
 
 All required libraries are installed into the virtual environment.<br>
-**You have to activate the virtual environment before starting a notebook.**
+**You have to activate the virtual environment before starting JupyterLab.**
 
 ---
 
@@ -77,9 +77,8 @@ run `pip freeze > requirements.txt`.
 
 # libraries
 
-* https://github.com/johnwargo/seeed-studio-relay-board
+* [relay_lib_seeed](https://github.com/johnwargo/seeed-studio-relay-board)
   * library to control the seeed relay hat
   * updated version: https://github.com/johnwargo/seeed-studio-relay-v2
-* https://github.com/jupyter/notebook
-  * a web-based notebook environment for interactive computing
-  * could be used for our user interface
+    * supports stacked hats 🎩
+* smbus
