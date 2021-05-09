@@ -33,8 +33,8 @@ python3.9 -c 'import ssl;print(ssl.OPENSSL_VERSION)'
 # clone the repo:
 git clone 'git@github.com:bmedicke/quantum_cryptography.git' # or via https.
 
-# switch to the notebooks folder:
-cd quantum_cryptography/notebooks
+# switch to the repo folder:
+cd quantum_cryptography
 
 # create a virtual Python environment with the new Python:
 python3.9 -m venv env
@@ -58,7 +58,7 @@ sudo raspi-config
 ```sh
 # activate the virtual environment if its not still active.
 source env/bin/activate # you can deactivate the venv with: deactivate
-jupyter-lab --ip=0.0.0.0 --no-browser # start the notebook.
+jupyter-lab --ip=0.0.0.0 --no-browser notebooks/ # start JupyterLab.
   # the first flag binds the programm to all network interfaces so we
   # can connect to the raspberry pi via its public IP address.
   # the second flag prevents a browser from popping up.
