@@ -40,7 +40,7 @@ See [Creating co-authored commits on GitHub](https://docs.github.com/en/github/c
 
 ---
 
-Before git-adding changes to a Jupyter Notebook click: `Kernel` → `Restart and Clear Output`.
+Before git-adding changes to a JupyterLab Notebook click: `Kernel` → `Restart and Clear Output`.
 
 ## current hardware setup
 
@@ -49,7 +49,7 @@ Before git-adding changes to a Jupyter Notebook click: `Kernel` → `Restart and
 * [Theory](theory.md) 💭 describes the theory behind the BB84 algorithm
 * [Hardware](hardware.md) 🔭 collects information about the hardware setup (filter orientation, etc.) and used hardware
 * [Software](software.md) 🧑🏻‍💻 setup instructions, collection of potentially useful libraries
-* [Notebooks](notebooks) 🪐 contains the Jupyter Notebooks for Alice, Bob and Eve
+* [Notebooks](notebooks) 🪐 contains the JupyterLab Notebooks for Alice, Bob and Eve
 
 ## whiteboard
 
