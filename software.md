@@ -3,7 +3,7 @@
 * Rasbperry Pi running Raspbian or similar
 * Python  ≥3.9 (required for type hinting)
   * highly recommended: a virtual environment (like [venv](https://docs.python.org/3/library/venv.html))
-* [Jupyter Lab notebook](https://jupyter.org/) for the Web UI
+* [JupyterLab notebook](https://jupyter.org/) for the Web UI
 
 # Raspbian setup
 
@@ -58,7 +58,7 @@ sudo raspi-config
 ```sh
 # activate the virtual environment if its not still active.
 source env/bin/activate # you can deactivate the venv with: deactivate
-jupyter notebook --ip=0.0.0.0 --no-browser # start the notebook.
+jupyter-lab --ip=0.0.0.0 --no-browser # start the notebook.
   # the first flag binds the programm to all network interfaces so we
   # can connect to the raspberry pi via its public IP address.
   # the second flag prevents a browser from popping up.
