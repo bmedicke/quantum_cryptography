@@ -8,8 +8,11 @@ Demonstration of **quantum-cryptography-based one-time pad communication** via<b
 
 ## project progress
 
-* [Kanban Board](https://github.com/bmedicke/quantum_cryptography/projects/1?fullscreen=true) 📝 ([Ben](https://github.com/bmedicke/quantum_cryptography/projects/1?fullscreen=true&card_filter_query=assignee%3Abmedicke), [Ferdi](https://github.com/bmedicke/quantum_cryptography/projects/1?fullscreen=true&card_filter_query=assignee%3Aosomo3000), [Manu](https://github.com/bmedicke/quantum_cryptography/projects/1?fullscreen=true&card_filter_query=assignee%3Anamanuel), [Niko](https://github.com/bmedicke/quantum_cryptography/projects/1?fullscreen=true&card_filter_query=assignee%3Anikobenedikt))
-* [Milestones](https://github.com/bmedicke/quantum_cryptography/milestones) 🗿
+Kanban Boards:  [Everyone](https://github.com/bmedicke/quantum_cryptography/projects/1?fullscreen=true), [Ben](https://github.com/bmedicke/quantum_cryptography/projects/1?fullscreen=true&card_filter_query=assignee%3Abmedicke), [Ferdi](https://github.com/bmedicke/quantum_cryptography/projects/1?fullscreen=true&card_filter_query=assignee%3Aosomo3000), [Manu](https://github.com/bmedicke/quantum_cryptography/projects/1?fullscreen=true&card_filter_query=assignee%3Anamanuel), [Niko](https://github.com/bmedicke/quantum_cryptography/projects/1?fullscreen=true&card_filter_query=assignee%3Anikobenedikt)
+
+[![GitHub milestones](https://img.shields.io/github/milestones/open/bmedicke/quantum_cryptography)](https://github.com/bmedicke/quantum_cryptography/milestones?state=open)
+[![GitHub milestones](https://img.shields.io/github/milestones/closed/bmedicke/quantum_cryptography)](https://github.com/bmedicke/quantum_cryptography/milestones?state=closed)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/w/bmedicke/quantum_cryptography?style=flat-square)](https://github.com/bmedicke/quantum_cryptography/pulse)
 
 ## contributors
 
