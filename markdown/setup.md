@@ -100,11 +100,17 @@ All required libraries are installed into the virtual environment.<br>
 # install docker:
 curl -fsSL https://get.docker.com | sh
 
-# test it:
-docker run armhf/hello
+# install docker-compose outside of venv:
+sudo pip3 install docker-compose
 
 # start the MQTT broker:
-docker compose up
+sudo docker-compose up -d
+
+# check if it's running:
+sudo docker-compose ps
+
+# to stop it:
+sudo docker-compose down
 ```
 
 ## configuring the code formatter
