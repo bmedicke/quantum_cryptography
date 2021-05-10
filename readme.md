@@ -2,7 +2,7 @@
 
 Demonstration of **quantum-cryptography-based one-time pad communication** via<br>the **BB84 algorithm** using a non-single photon source.
 
-[project progress](#project-progress) | [contributors](#contributors) | [repo structure](#repo-structure) | [frequently asked questions](#frequently-asked-questions)
+[project progress](#project-progress) | [contributors](#contributors) | [repository structure](#repository-structure) | [frequently asked questions](#frequently-asked-questions)
 
 ---
 
@@ -23,7 +23,7 @@ Kanban Boards:  [Everyone](https://github.com/bmedicke/quantum_cryptography/proj
 | Manuel Nagel     | [namanuel](https://github.com/namanuel)         |
 | Nikolai Benedikt | [nikobenedikt](https://github.com/nikobenedikt) |
 
-## repo structure
+## repository structure
 
 * [Theory](markdown/theory.md) 💭 describes the the BB84 algorithm and required theory
 * [Hardware](markdown/hardware.md) 🔭 collects information about which hardware was used and how to setup it
