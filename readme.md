@@ -1,8 +1,6 @@
 ![quantum cryptography logo](media/logo-00.png)
 
-# BB84 Demo
-
-Demonstration of quantum-cryptography-based one-time pad communication via<br>the BB84 algorithm using a non-single photon source.
+Demonstration of **quantum-cryptography-based one-time pad communication** via<br>the **BB84 algorithm** using a non-single photon source.
 
 [project progress](#project-progress) | [contributors](#contributors) | [repo structure](#repo-structure) | [current hardware setup](#current-hardware-setup) | [whiteboard](#whiteboard)
 
