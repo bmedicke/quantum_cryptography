@@ -2,6 +2,8 @@
 
 Demonstration of **quantum-cryptography-based one-time pad communication** via<br>the **BB84 algorithm** using a non-single photon source.
 
+![Python version 3.9](https://img.shields.io/badge/Python-3.9-brightgreen)
+
 [project progress](#project-progress) | [contributors](#contributors) | [repository structure](#repository-structure) | [frequently asked questions](#frequently-asked-questions)
 
 ---
@@ -12,7 +14,7 @@ Kanban Boards:  [Everyone](https://github.com/bmedicke/quantum_cryptography/proj
 
 [![GitHub milestones](https://img.shields.io/github/milestones/open/bmedicke/quantum_cryptography)](https://github.com/bmedicke/quantum_cryptography/milestones?state=open)
 [![GitHub milestones](https://img.shields.io/github/milestones/closed/bmedicke/quantum_cryptography)](https://github.com/bmedicke/quantum_cryptography/milestones?state=closed)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/w/bmedicke/quantum_cryptography?style=flat-square)](https://github.com/bmedicke/quantum_cryptography/graphs/contributors)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/w/bmedicke/quantum_cryptography)](https://github.com/bmedicke/quantum_cryptography/graphs/contributors)
 
 ## contributors
 
