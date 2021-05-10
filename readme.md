@@ -47,3 +47,7 @@ See [Hardware](markdown/hardware.md) for a list of required components and [3D m
 **Is Python 3.9 absolutely required?**
 
 Yes. We make use of some of the [new features](https://docs.python.org/3/whatsnew/3.9.html).
+
+**When running `pip install -r requirements.txt` it fails with `Building wheel for smbus (setup.py) ... error`.**
+
+You are probably not on a Raspberry Pi with Raspbian (or a similar operating system). This is due to missing I2C. If you're just interested in seeing the notebooks and running some parts of them you can remove the smbus line from `requirements.txt`. You won't be able to use the quantum channel, of course.
