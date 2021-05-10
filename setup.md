@@ -82,3 +82,24 @@ run `pip freeze > requirements.txt`.
   * updated version: https://github.com/johnwargo/seeed-studio-relay-v2
     * supports stacked hats 🎩
 * smbus
+* jupyterlab_code_formatter and black
+
+## configuring the code formatter
+
+Set the default code formatter to black:
+
+*Settings* → *Advanced Code Formatter* → *Jupyterlab Code Formatter* → *User Preferences*
+
+```json
+{
+    "preferences": {
+        "default_formatter": {
+            "python": "black"
+        }
+    },
+    "black": {
+         "line_length": 79,
+         "string_normalization": false
+    }
+}
+```
