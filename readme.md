@@ -2,7 +2,7 @@
 
 Demonstration of **quantum-cryptography-based one-time pad communication** via<br>the **BB84 algorithm** using a non-single photon source.
 
-[project progress](#project-progress) | [contributors](#contributors) | [repo structure](#repo-structure) | [current hardware setup](#current-hardware-setup) | [whiteboard](#whiteboard)
+[project progress](#project-progress) | [contributors](#contributors) | [repo structure](#repo-structure) | [frequently asked questions](#frequently-asked-questions)
 
 ---
 
@@ -22,14 +22,10 @@ Demonstration of **quantum-cryptography-based one-time pad communication** via<b
 
 ## repo structure
 
-* [Theory](markdown/theory.md) 💭 describes the theory behind the BB84 algorithm
-* [Hardware](markdown/hardware.md) 🔭 collects information about the hardware setup (filter orientation, etc.) and used hardware
-* [Setup](markdown/setup.md) 🧑🏻‍💻 setup instructions, collection of potentially useful libraries
+* [Theory](markdown/theory.md) 💭 describes the the BB84 algorithm and required theory
+* [Hardware](markdown/hardware.md) 🔭 collects information about which hardware was used and how to setup it
+* [Setup](markdown/setup.md) 🧑🏻‍💻 installation instructions for the software and required services
+* [Notebooks](notebooks) 🪐 contains the actual JupyterLab Notebooks for Alice, Bob and Eve
 * [Guidelines](markdown/guidelines.md) ✒️  coding and contribution guidelines
-* [Notebooks](notebooks) 🪐 contains the JupyterLab Notebooks for Alice, Bob and Eve
 
-## current hardware setup
-
-## whiteboard
-
-![filter](whiteboard/IMG_0391.jpg)
+## frequently asked questions
