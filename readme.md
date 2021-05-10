@@ -32,3 +32,7 @@ Kanban Boards:  [Everyone](https://github.com/bmedicke/quantum_cryptography/proj
 * [Guidelines](markdown/guidelines.md) ✒️  coding and contribution guidelines
 
 ## frequently asked questions
+
+**Why build some components instead of using the respective ThorLabs versions?**
+
+Mainly to keep it open-source and reduce the size of the hardware setup. As an added bonus it lowers the cost and barrier of entry for anyone who is interested in replicating the project.
