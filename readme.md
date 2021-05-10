@@ -25,6 +25,8 @@ Kanban Boards:  [Everyone](https://github.com/bmedicke/quantum_cryptography/proj
 
 ## repository structure
 
+Here's a quick breakdown of what to find where in the repository:
+
 * [Theory](markdown/theory.md) 💭 describes the the BB84 algorithm and required theory
 * [Hardware](markdown/hardware.md) 🔭 collects information about which hardware was used and how to set it up
 * [3D models](3d-models) 🏗️ holds printable components
