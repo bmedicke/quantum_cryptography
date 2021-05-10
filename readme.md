@@ -10,9 +10,8 @@ Demonstration of quantum-cryptography-based one-time pad communication via<br>th
 
 * [project progress](#project-progress)
 * [contributors](#contributors)
-* [contribution guidelines](#contribution-guidelines)
-* [current hardware setup](#current-hardware-setup)
 * [repo structure](#repo-structure)
+* [current hardware setup](#current-hardware-setup)
 * [whiteboard](#whiteboard)
 
 <!-- vim-markdown-toc -->
@@ -31,26 +30,15 @@ Demonstration of quantum-cryptography-based one-time pad communication via<br>th
 | Manuel Nagel     | [namanuel](https://github.com/namanuel)         |
 | Nikolai Benedikt | [nikobenedikt](https://github.com/nikobenedikt) |
 
-## contribution guidelines
-
-When pair-programming trail the commit message with:<br>
-`Co-authored-by: Name <name@example.com>`.
-
-See [Creating co-authored commits on GitHub](https://docs.github.com/en/github/committing-changes-to-your-project/creating-a-commit-with-multiple-authors#creating-co-authored-commits-on-github) for details.
-
----
-
-Before git-adding changes to a JupyterLab Notebook click: `Kernel` → `Restart and Clear Output`.
-
-## current hardware setup
-
 ## repo structure
 
 * [Theory](markdown/theory.md) 💭 describes the theory behind the BB84 algorithm
 * [Hardware](markdown/hardware.md) 🔭 collects information about the hardware setup (filter orientation, etc.) and used hardware
 * [Setup](markdown/setup.md) 🧑🏻‍💻 setup instructions, collection of potentially useful libraries
-* [Coding guidelines](markdown/coding-guidelines.md) ✒️  to keep all code consistent
+* [Guidelines](markdown/guidelines.md) ✒️  coding and contribution guidelines
 * [Notebooks](notebooks) 🪐 contains the JupyterLab Notebooks for Alice, Bob and Eve
+
+## current hardware setup
 
 ## whiteboard
 
