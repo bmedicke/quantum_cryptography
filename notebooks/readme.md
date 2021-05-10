@@ -1,4 +1,4 @@
-# Jupyter Notebook
+# JupyterLab Notebooks
 
 This folder contains the notebooks for Alice, Bob and Eve.
 
