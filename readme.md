@@ -26,7 +26,7 @@ Kanban Boards:  [Everyone](https://github.com/bmedicke/quantum_cryptography/proj
 ## repository structure
 
 * [Theory](markdown/theory.md) 💭 describes the the BB84 algorithm and required theory
-* [Hardware](markdown/hardware.md) 🔭 collects information about which hardware was used and how to setup it
+* [Hardware](markdown/hardware.md) 🔭 collects information about which hardware was used and how to set it up
 * [Setup](markdown/setup.md) 🧑🏻‍💻 installation instructions for the software and required services
 * [Notebooks](notebooks) 🪐 contains the actual JupyterLab Notebooks for Alice, Bob and Eve
 * [Guidelines](markdown/guidelines.md) ✒️  coding and contribution guidelines
