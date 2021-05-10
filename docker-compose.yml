@@ -1,0 +1,11 @@
+# Author: Benjamin Medicke
+
+version: '3'
+
+services:
+  mosquitto:
+    image: eclipse-mosquitto
+    command: mosquitto -c /mosquitto-no-auth.conf
+    ports:
+      - 1883:1883
+    restart: unless-stopped
