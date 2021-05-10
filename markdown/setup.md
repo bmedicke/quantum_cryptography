@@ -1,11 +1,33 @@
-# environment
+# setup instructions
 
-* Rasbperry Pi running Raspbian or similar
+<!-- vim-markdown-toc GFM -->
+
+* [environment](#environment)
+* [Raspberry Pis](#raspberry-pis)
+  * [Alice, Bob & Eve](#alice-bob--eve)
+    * [Python 3](#python-3)
+    * [cloning and initial setup](#cloning-and-initial-setup)
+    * [starting the notebook](#starting-the-notebook)
+  * [Alice](#alice)
+    * [Docker & MQTT broker](#docker--mqtt-broker)
+* [configuring the code formatter](#configuring-the-code-formatter)
+* [used libraries](#used-libraries)
+
+<!-- vim-markdown-toc -->
+
+## environment
+
+* Rasbperry Pis running Raspbian
 * Python  ≥3.9 (required for type hinting)
   * highly recommended: a virtual environment (like [venv](https://docs.python.org/3/library/venv.html))
-* [JupyterLab notebook](https://jupyter.org/) for the Web UI
+* [JupyterLab](https://jupyter.org/) for running the notebooks
+* an MQTT broker running in Docker
 
-# Raspbian setup
+## Raspberry Pis
+
+### Alice, Bob & Eve
+
+#### Python 3
 
 ```sh
 # check current Python version:
@@ -27,7 +49,7 @@ python3.9 --version
 python3.9 -c 'import ssl;print(ssl.OPENSSL_VERSION)'
 ```
 
-# cloning and initial setup
+#### cloning and initial setup
 
 ```sh
 # clone the repo:
@@ -53,7 +75,7 @@ sudo raspi-config
   # Interfacing options → I2C → yes.
 ```
 
-# starting the notebook
+#### starting the notebook
 
 ```sh
 # activate the virtual environment if its not still active.
@@ -70,19 +92,20 @@ jupyter-lab --ip=0.0.0.0 --no-browser notebooks/ # start JupyterLab.
 All required libraries are installed into the virtual environment.<br>
 **You have to activate the virtual environment before starting JupyterLab.**
 
----
+### Alice
 
-To update the requirements file (after addding new libraries to the project)
-run `pip freeze > requirements.txt`.
+#### Docker & MQTT broker
 
-# libraries
+```sh
+# install docker:
+curl -fsSL https://get.docker.com | sh
 
-* [relay_lib_seeed](https://github.com/johnwargo/seeed-studio-relay-board)
-  * library to control the seeed relay hat
-  * updated version: https://github.com/johnwargo/seeed-studio-relay-v2
-    * supports stacked hats 🎩
-* [smbus](https://pypi.org/project/smbus/)
-* [jupyterlab_code_formatter](https://github.com/ryantam626/jupyterlab_code_formatter) and [black](https://github.com/psf/black)
+# test it:
+docker run armhf/hello
+
+# start the MQTT broker:
+docker compose up
+```
 
 ## configuring the code formatter
 
@@ -102,3 +125,15 @@ Set the default code formatter to black:
     }
 }
 ```
+
+## used libraries
+
+* [jupyterlab_code_formatter](https://github.com/ryantam626/jupyterlab_code_formatter)
+  * and [black](https://github.com/psf/black) as a formatter
+* [paho-mqtt](https://pypi.org/project/paho-mqtt/)
+* [seeed-studio-relay-board](https://github.com/johnwargo/seeed-studio-relay-board)
+  * library to control the seeed relay hat
+  * updated version: [seeed-studio-relay-v2](https://github.com/johnwargo/seeed-studio-relay-v2)
+    * supports stacked hats 🎩
+  * [smbus](https://pypi.org/project/smbus/)
+
