@@ -39,3 +39,7 @@ Here's a quick breakdown of what to find where in the repository:
 **Why build some components instead of using the respective ThorLabs versions?**
 
 Mainly to keep it open-source and reduce the size of the hardware setup. As an added bonus it lowers the cost and barrier of entry for anyone who is interested in replicating the project.
+
+**What hardware do I need to run this project?**
+
+See [Hardware](markdown/hardware.md) for a list of required components and [3D models](3d-models) for printable parts.
