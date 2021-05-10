@@ -12,7 +12,7 @@ Kanban Boards:  [Everyone](https://github.com/bmedicke/quantum_cryptography/proj
 
 [![GitHub milestones](https://img.shields.io/github/milestones/open/bmedicke/quantum_cryptography)](https://github.com/bmedicke/quantum_cryptography/milestones?state=open)
 [![GitHub milestones](https://img.shields.io/github/milestones/closed/bmedicke/quantum_cryptography)](https://github.com/bmedicke/quantum_cryptography/milestones?state=closed)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/w/bmedicke/quantum_cryptography?style=flat-square)](https://github.com/bmedicke/quantum_cryptography/pulse)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/w/bmedicke/quantum_cryptography?style=flat-square)](https://github.com/bmedicke/quantum_cryptography/graphs/contributors)
 
 ## contributors
 
