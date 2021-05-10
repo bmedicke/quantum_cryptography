@@ -1,7 +1,5 @@
 # quantum cryptography
 
-## toc
-
 <!-- vim-markdown-toc GFM -->
 
 * [quantum key distribution](#quantum-key-distribution)
