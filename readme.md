@@ -4,17 +4,7 @@
 
 Demonstration of quantum-cryptography-based one-time pad communication via<br>the BB84 algorithm using a non-single photon source.
 
-## table of contents
-
-<!-- vim-markdown-toc GFM -->
-
-* [project progress](#project-progress)
-* [contributors](#contributors)
-* [repo structure](#repo-structure)
-* [current hardware setup](#current-hardware-setup)
-* [whiteboard](#whiteboard)
-
-<!-- vim-markdown-toc -->
+[project progress](#project-progress) | [contributors](#contributors) | [repo structure](#repo-structure) | [current hardware setup](#current-hardware-setup) | [whiteboard](#whiteboard)
 
 ## project progress
 
