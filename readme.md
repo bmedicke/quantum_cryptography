@@ -43,3 +43,7 @@ Mainly to keep it open-source and reduce the size of the hardware setup. As an a
 **What hardware do I need to run this project?**
 
 See [Hardware](markdown/hardware.md) for a list of required components and [3D models](3d-models) for printable parts.
+
+**Is Python 3.9 absolutely required?**
+
+Yes. We make use of some of the [new features](https://docs.python.org/3/whatsnew/3.9.html).
