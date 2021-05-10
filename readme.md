@@ -46,10 +46,10 @@ Before git-adding changes to a JupyterLab Notebook click: `Kernel` → `Restart 
 
 ## repo structure
 
-* [Theory](theory.md) 💭 describes the theory behind the BB84 algorithm
-* [Hardware](hardware.md) 🔭 collects information about the hardware setup (filter orientation, etc.) and used hardware
-* [Setup](setup.md) 🧑🏻‍💻 setup instructions, collection of potentially useful libraries
-* [Coding guidelines](coding-guidelines.md) ✒️  to keep all code consistent
+* [Theory](markdown/theory.md) 💭 describes the theory behind the BB84 algorithm
+* [Hardware](markdown/hardware.md) 🔭 collects information about the hardware setup (filter orientation, etc.) and used hardware
+* [Setup](markdown/setup.md) 🧑🏻‍💻 setup instructions, collection of potentially useful libraries
+* [Coding guidelines](markdown/coding-guidelines.md) ✒️  to keep all code consistent
 * [Notebooks](notebooks) 🪐 contains the JupyterLab Notebooks for Alice, Bob and Eve
 
 ## whiteboard
