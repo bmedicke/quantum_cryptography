@@ -2,7 +2,7 @@
 
 Demonstration of **quantum-cryptography-based one-time pad communication** via<br>the **BB84 algorithm** using a non-single photon source.
 
-[![Python version 3.9](https://img.shields.io/badge/Python-3.9-brightgreen)](https://docs.python.org/3/whatsnew/3.9.html)
+[![Python version 3.9](https://img.shields.io/badge/python-v3.9-brightgreen)](https://docs.python.org/3/whatsnew/3.9.html)
 
 [project progress](#project-progress) | [contributors](#contributors) | [repository structure](#repository-structure) | [frequently asked questions](#frequently-asked-questions)
 
