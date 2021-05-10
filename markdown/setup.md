@@ -81,8 +81,8 @@ run `pip freeze > requirements.txt`.
   * library to control the seeed relay hat
   * updated version: https://github.com/johnwargo/seeed-studio-relay-v2
     * supports stacked hats 🎩
-* smbus
-* jupyterlab_code_formatter and black
+* [smbus](https://pypi.org/project/smbus/)
+* [jupyterlab_code_formatter](https://github.com/ryantam626/jupyterlab_code_formatter) and [black](https://github.com/psf/black)
 
 ## configuring the code formatter
 
