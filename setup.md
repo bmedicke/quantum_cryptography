@@ -98,8 +98,7 @@ Set the default code formatter to black:
         }
     },
     "black": {
-         "line_length": 79,
-         "string_normalization": false
+         "line_length": 79
     }
 }
 ```
