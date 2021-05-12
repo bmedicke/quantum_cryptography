@@ -45,7 +45,7 @@ The four polarizations can be grouped into two sets.
 The **HV set** is located along the X and Y axis. The **LR set** 45 degrees rotated from that.
 
 > polarizations.jpg
-<img src="media/polarizations.jpg"></img>
+<img src="../media/theory/polarizations.jpg"></img>
 
 
 ### prerequisites Bob
@@ -63,7 +63,7 @@ Each beam splitter can produce two values.
   2. **R**, right
 
 > beam-splitter.jpg
-<img src="../media/beam-splitter.jpg" max-width=600></img>
+<img src="../media/theory/beam-splitter.jpg" max-width=600></img>
 
 To obtain the orinal value of a photon (without fail) the orientations of Alice and Bob have to match up. Some examples:
 
@@ -114,7 +114,7 @@ This entire scheme is based on the fact that you can not find out the basis of p
 A couple of example scenarios:
 
 > eve.jpg
-<img src="../media/eve.jpg"></img>
+<img src="../media/theory/eve.jpg"></img>
 
 * To keep it simple Alice always send `V`.
 * In the first case Eve and Bob select a vertical splitter, eavesdropping takes place but is not detected.
