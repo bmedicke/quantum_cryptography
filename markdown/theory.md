@@ -50,7 +50,7 @@ The **HV set** is located along the X and Y axis. The **LR set** 45 degrees rota
 
 ### prerequisites Bob
 
-Bob has two polarization beam splitters with which he analyzes photons sent by Alice. One oriented at 0 degrees (vertical) and one at 45 degres (diagonal).
+Bob has two polarization beam splitters with which he analyzes photons sent by Alice. One oriented at 0 degrees (vertical) and one at 45 degrees (diagonal).
 
 The **vertical beam splitter** can analyze photons of the HV set. The **diagonal beam splitter** can analyze photons of the LR set.
 
@@ -65,7 +65,7 @@ Each beam splitter can produce two values.
 > beam-splitter.jpg
 <img src="../media/theory/beam-splitter.jpg" max-width=600></img>
 
-To obtain the orinal value of a photon (without fail) the orientations of Alice and Bob have to match up. Some examples:
+To obtain the original value of a photon (without fail) the orientations of Alice and Bob have to match up. Some examples:
 
 * inputting H into the vertical beam splitter will always return H (match)
 * inputting V into the vertical beam splitter will always return V (match)
@@ -85,10 +85,10 @@ For each (potential) bit of the key the following happens:
 
 After sending a bunch of photons we move on to the next step: **reconciliation**.
 
-* Bob publicly annouces all his chosen beam splitter orientations
+* Bob publicly announces all his chosen beam splitter orientations
 * Alice publicly replies which were correct
 * They both drop all the values where Bob chose wrong
-* They now hold the key (which consinsts of all values where Bob chose correctly)
+* They now hold the key (which consists of all values where Bob chose correctly)
 
 ### consequences of eavesdropping
 
