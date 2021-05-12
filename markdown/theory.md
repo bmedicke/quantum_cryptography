@@ -25,7 +25,7 @@ Basic order of events:
   * if anybody was listening the key is discarded
   * if not they now have a new key to communicate with
 * the reason why this works is because **any measurement on a quantum object leaves a trace**
-  * it is impossible to read information traveling over a quantom channel without perturbing it
+  * it is impossible to read information traveling over a quantum channel without perturbing it
 
 ## BB84 protocol
 
