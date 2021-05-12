@@ -36,6 +36,8 @@ Here's a quick breakdown of what to find where in the repository:
 * [Notebooks](notebooks) 🪐 contains the actual JupyterLab Notebooks for Alice, Bob and Eve
 * [Guidelines](markdown/guidelines.md) ✒️  coding and contribution guidelines
 
+![filter wheel from ThorLabs](media/banner-filter-wheel.png)
+
 ## frequently asked questions
 
 **Why build some components instead of using the respective ThorLabs versions?**
