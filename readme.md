@@ -18,12 +18,12 @@ Kanban Boards:  [**Everyone**](https://github.com/bmedicke/quantum_cryptography/
 
 ## contributors
 
-| Author           | GitHub profile                                  |
-|------------------|-------------------------------------------------|
-| Benjamin Medicke | [bmedicke](https://github.com/bmedicke)         |
-| Ferdi Cevik      | [Osomo3000](https://github.com/Osomo3000)       |
-| Manuel Nagel     | [namanuel](https://github.com/namanuel)         |
-| Nikolai Benedikt | [nikobenedikt](https://github.com/nikobenedikt) |
+| Author           | GitHub profile                                  | homepage                                 |
+|------------------|-------------------------------------------------|------------------------------------------|
+| Benjamin Medicke | [bmedicke](https://github.com/bmedicke)         | [benmedicke.com](https://benmedicke.com) |
+| Ferdi Cevik      | [Osomo3000](https://github.com/Osomo3000)       | [cf-projects](http://cf-projects.net/)   |
+| Manuel Nagel     | [namanuel](https://github.com/namanuel)         |                                          |
+| Nikolai Benedikt | [nikobenedikt](https://github.com/nikobenedikt) |                                          |
 
 ## repository structure
 
