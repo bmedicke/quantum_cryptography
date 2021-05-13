@@ -49,6 +49,12 @@ Mainly to keep it open-source and reduce the size of the hardware setup. As an a
 
 See [Hardware](markdown/hardware.md) for a list of required components and [3D models](3d-models) for printable parts.
 
+**Why use JupyterLab Notebooks as a frontend?**
+
+On one hand, JupyterLab provides an interactive, browser-based computing environment, which makes it easy to do exploratory coding.
+On the other hand, different types of cells in a notebook allow code and markdown-based documentation to live in the same document.
+We hope this makes it easier to follow both the code and BB84 protocol.
+
 **Is Python 3.9 absolutely required?**
 
 Yes. We make use of some of the [new features](https://docs.python.org/3/whatsnew/3.9.html).
