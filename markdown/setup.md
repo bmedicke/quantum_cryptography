@@ -166,4 +166,5 @@ Installation without `requirements.txt`:
 
 ```sh
 pip install paho-mqtt jupyterlab black jupyterlab-code-formatter ipywidgets
+pip install smbus
 ```
