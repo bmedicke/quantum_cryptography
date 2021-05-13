@@ -1,6 +1,6 @@
-import relay_lib_seeed.py
+import relay_lib_seeed
 import time
 
-relay_on(4)
+relay_lib_seeed.relay_on(4)
 time.sleep(1)
-relay_off(4)
+relay_lib_seeed.relay_off(4)
