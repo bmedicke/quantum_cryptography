@@ -142,9 +142,10 @@ Set the default code formatter to black:
   * updated version: [seeed-studio-relay-v2](https://github.com/johnwargo/seeed-studio-relay-v2)
     * supports stacked hats 🎩
   * [smbus](https://pypi.org/project/smbus/)
+* [ipywidgets](https://github.com/jupyter-widgets/ipywidgets)
 
 Installation without `requirements.txt`:
 
 ```sh
-pip install paho-mqtt jupyterlab black jupyterlab-code-formatter
+pip install paho-mqtt jupyterlab black jupyterlab-code-formatter ipywidgets
 ```
