@@ -19,6 +19,7 @@ idna==2.10
 ipykernel==5.5.4
 ipython==7.23.1
 ipython-genutils==0.2.0
+ipywidgets==7.6.3
 jedi==0.18.0
 Jinja2==3.0.0
 json5==0.9.5
@@ -30,6 +31,7 @@ jupyterlab==3.0.15
 jupyterlab-code-formatter==1.4.10
 jupyterlab-pygments==0.1.2
 jupyterlab-server==2.5.1
+jupyterlab-widgets==1.0.0
 MarkupSafe==2.0.0
 matplotlib-inline==0.1.2
 mistune==0.8.4
@@ -72,3 +74,4 @@ urllib3==1.26.4
 wcwidth==0.2.5
 webencodings==0.5.1
 websocket-client==0.59.0
+widgetsnbextension==3.5.1
