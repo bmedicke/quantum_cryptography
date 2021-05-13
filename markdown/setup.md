@@ -11,6 +11,7 @@
   * [Alice](#alice)
     * [Docker & MQTT broker](#docker--mqtt-broker)
 * [configuring the code formatter](#configuring-the-code-formatter)
+* [configuring shortcuts](#configuring-shortcuts)
 * [used libraries](#used-libraries)
 
 <!-- vim-markdown-toc -->
@@ -130,6 +131,23 @@ Set the default code formatter to black:
          "line_length": 79
     }
 }
+```
+
+## configuring shortcuts
+
+```json
+{
+  "shortcuts": [
+    {
+      "command": "notebook:run-cell",
+      "keys": [
+        ";"
+      ],
+      "selector": ".jp-Notebook:focus"
+    }
+  ]
+}
+
 ```
 
 ## used libraries
