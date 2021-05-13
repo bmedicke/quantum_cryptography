@@ -1,4 +1,7 @@
-import relay_lib_seeed
+from qcrypt.hardware import laser
+laser.hello()
+
+
 import time
 
 relay_lib_seeed.relay_on(4)
