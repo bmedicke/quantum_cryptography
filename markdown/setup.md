@@ -143,3 +143,8 @@ Set the default code formatter to black:
     * supports stacked hats 🎩
   * [smbus](https://pypi.org/project/smbus/)
 
+Installation without `requirements.txt`:
+
+```sh
+pip install paho-mqtt jupyterlab black jupyterlab-code-formatter
+```
