@@ -37,8 +37,10 @@ def trigger():
 
 
 logging.basicConfig(
-    filename="laser.log",
-    filemode="w",
+    handlers=[
+        logging.StreamHandler(),
+        logging.FileHandler(filename="laser.log", mode="a"),
+    ],
     format="%(asctime)s: %(levelname)s - %(message)s",
     level=logging.INFO,
 )
