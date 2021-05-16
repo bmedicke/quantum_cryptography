@@ -1,15 +1,10 @@
 import time
 import logging
+from collections import defaultdict
 import paho.mqtt.client as mqtt
 from . import relay_lib_seeed
 
-config = {
-    "name": None,
-    "relay": None,
-    "delay": None,
-    "laser_channel": None,
-}
-
+config = defaultdict(lambda: none)
 
 def init(username="alice", relay_id=1, delay_in_seconds=1):
     global config
