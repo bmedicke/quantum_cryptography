@@ -5,6 +5,17 @@ from . import relay_lib_seeed
 
 
 class Laser:
+    # executed at import:
+    logging.basicConfig(
+        handlers=[
+            logging.StreamHandler(),
+            logging.FileHandler(filename="laser.log", mode="a"),
+        ],
+        format="%(asctime)s: %(levelname)s - %(message)s",
+        level=logging.INFO,
+    )
+    logging.info("laser module: imported")
+
     def __init__(
         self,
         username="alice",
@@ -21,7 +32,9 @@ class Laser:
         )
 
         logging.info(f"{username} relay: selected number {relay_id}")
-        logging.info(f"{username} delay between on and off: {delay_in_seconds}s")
+        logging.info(
+            f"{username} delay between on and off: {delay_in_seconds}s"
+        )
 
         self.client = mqtt.Client()
         self.client.on_connect = self.on_connect
@@ -29,16 +42,6 @@ class Laser:
 
         self.client.connect(mqtt_broker_ip, 1883, 60)
         self.client.loop_start()
-
-    logging.basicConfig(
-        handlers=[
-            logging.StreamHandler(),
-            logging.FileHandler(filename="laser.log", mode="a"),
-        ],
-        format="%(asctime)s: %(levelname)s - %(message)s",
-        level=logging.INFO,
-    )
-    logging.info("laser module: imported")
 
     def on_connect(self, client, userdata, flags, rc):
         logging.info(f"mqtt: {self.name} connected")
