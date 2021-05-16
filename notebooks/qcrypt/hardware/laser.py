@@ -6,7 +6,13 @@ from . import relay_lib_seeed
 
 _config = defaultdict(lambda: none)
 
-def init(username="alice", relay_id=1, delay_in_seconds=1):
+
+def init(
+    username="alice",
+    relay_id=1,
+    delay_in_seconds=1,
+    mqtt_broker_ip="localhost",
+):
     global _config
     _config["name"] = username
     _config["relay"] = relay_id
@@ -38,7 +44,9 @@ def trigger():
 
     time.sleep(_config["delay"])
 
-    client.publish(_config["laser_channel"], payload="off", qos=0, retain=False)
+    client.publish(
+        _config["laser_channel"], payload="off", qos=0, retain=False
+    )
     relay_lib_seeed.relay_off(_config["relay"])
     logging.info(f"laser relay {_config['relay']}: off")
 
@@ -54,7 +62,6 @@ logging.basicConfig(
 logging.info("laser module: imported")
 
 
-mqtt_broker_ip = "localhost"
 client = mqtt.Client()
 client.on_connect = on_connect
 client.on_disconnect = on_disconnect
