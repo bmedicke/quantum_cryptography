@@ -25,13 +25,13 @@ def hello():
 
 
 def trigger():
-    client.publish(mqtt_channel, payload="laser/on", qos=0, retain=False)
+    client.publish(laser_channel, payload="on", qos=0, retain=False)
     relay_lib_seeed.relay_on(RELAY)
     logging.info("laser: on")
 
     time.sleep(DELAY)
 
-    client.publish(mqtt_channel, payload="laser/off", qos=0, retain=False)
+    client.publish(laser_channel, payload="off", qos=0, retain=False)
     relay_lib_seeed.relay_off(RELAY)
     logging.info("laser: off")
 
@@ -48,7 +48,7 @@ logging.info("laser module: imported")
 
 
 mqtt_broker_ip = "localhost"
-mqtt_channel = "quantum_cryptography/classical_channel"
+laser_channel = "quantum_cryptography/classical_channel/alice/laser"
 client = mqtt.Client()
 client.on_connect = on_connect
 client.on_disconnect = on_disconnect
