@@ -2,6 +2,7 @@
 # Seeed Studio Raspberry Pi Relay Board Library
 #
 # by John M. Wargo (www.johnwargo.com)
+# modified by Benjamin Medicke (benmedicke.com)
 #
 # Modified from the sample code on the Seeed Studio Wiki
 # http://wiki.seeed.cc/Raspberry_Pi_Relay_Board_v1.0/
@@ -33,7 +34,6 @@ def relay_on(relay_num):
     if isinstance(relay_num, int):
         # do we have a valid relay number?
         if 0 < relay_num <= NUM_RELAY_PORTS:
-            print('Turning relay', relay_num, 'ON')
             DEVICE_REG_DATA &= ~(0x1 << (relay_num - 1))
             bus.write_byte_data(DEVICE_ADDRESS, DEVICE_REG_MODE1, DEVICE_REG_DATA)
         else:
@@ -50,7 +50,6 @@ def relay_off(relay_num):
     if isinstance(relay_num, int):
         # do we have a valid relay number?
         if 0 < relay_num <= NUM_RELAY_PORTS:
-            print('Turning relay', relay_num, 'OFF')
             DEVICE_REG_DATA |= (0x1 << (relay_num - 1))
             bus.write_byte_data(DEVICE_ADDRESS, DEVICE_REG_MODE1, DEVICE_REG_DATA)
         else:
