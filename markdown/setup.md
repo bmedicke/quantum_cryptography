@@ -144,6 +144,13 @@ Set the default code formatter to black:
         ";"
       ],
       "selector": ".jp-Notebook:focus"
+    },
+    {
+      "command": "kernelmenu:restart-and-clear",
+      "keys": [
+        "Ctrl L"
+      ],
+      "selector": ".jp-Notebook:focus"
     }
   ]
 }
