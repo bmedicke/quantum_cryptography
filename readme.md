@@ -1,4 +1,4 @@
-![quantum cryptography logo](media/logo-00.png)
+![quantum cryptography logo](media/logo.svg)
 
 Demonstration of **quantum-cryptography-based one-time pad communication** via<br>the **BB84 algorithm** using a non-single photon source.
 
