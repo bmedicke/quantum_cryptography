@@ -22,7 +22,6 @@ def connect():
 
 def hello():
     logging.warning("pew pew pew!")
-    print("pew pew pew!")
 
 
 def trigger():
