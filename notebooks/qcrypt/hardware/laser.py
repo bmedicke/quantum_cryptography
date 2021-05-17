@@ -6,15 +6,14 @@ from . import relay_lib_seeed
 
 class Laser:
     # executed at import:
-    logging.basicConfig(
-        handlers=[
-            logging.StreamHandler(),
-            logging.FileHandler(filename="laser.log", mode="a"),
-        ],
-        format="%(asctime)s: %(levelname)s - %(message)s",
-        level=logging.INFO,
-    )
-    logging.info("laser module: imported")
+    logger = logging.getLogger("__Laser__")
+    formatter = logging.Formatter("%(asctime)s: %(levelname)s - %(message)s")
+    streamhandler = logging.StreamHandler()
+    filehandler = logging.FileHandler(filename="laser.log", mode="a")
+    streamhandler.setFormatter(formatter)
+    filehandler.setFormatter(formatter)
+    logger.addHandler(streamhandler)
+    logger.addHandler(filehandler)
 
     def __init__(
         self,
@@ -22,19 +21,25 @@ class Laser:
         relay_id=1,
         delay_in_seconds=1,
         mqtt_broker_ip="localhost",
+        log_level="INFO",
     ):
 
-        self.name = username
-        self.relay = relay_id
-        self.delay = delay_in_seconds
+        self.username = username
+        self.relay_id = relay_id
+        self.delay_in_seconds = delay_in_seconds
         self.laser_channel = (
             f"quantum_cryptography/classical_channel/{username}/laser"
         )
+        self.logger.setLevel(log_level)
 
-        logging.info(f"{username} relay: selected number {relay_id}")
-        logging.info(
+        self.logger.debug(f"{username} relay: selected number {relay_id}")
+        self.logger.debug(
             f"{username} delay between on and off: {delay_in_seconds}s"
         )
+        self.logger.debug(f"{username} mqtt_broker_ip: {mqtt_broker_ip}")
+
+        self.mqtt_broker_ip = mqtt_broker_ip
+        self.log_level = log_level
 
         self.client = mqtt.Client()
         self.client.on_connect = self.on_connect
@@ -44,22 +49,23 @@ class Laser:
         self.client.loop_start()
 
     def on_connect(self, client, userdata, flags, rc):
-        logging.info(f"mqtt: {self.name} connected")
+        self.logger.info(f"mqtt: {self.username} connected")
 
     def on_disconnect(self, client, userdata, rc):
-        logging.warning(f"mqtt: {self.name} disconnected")
+        self.logger.warning(f"mqtt: {self.username} disconnected")
 
     def trigger(self):
+        self.logger = logging.getLogger("__Laser__")
         self.client.publish(
             self.laser_channel, payload="on", qos=0, retain=False
         )
-        relay_lib_seeed.relay_on(self.relay)
-        logging.info(f"{self.name} laser relay {self.relay}: on")
+        relay_lib_seeed.relay_on(self.relay_id)
+        self.logger.info(f"{self.username} laser relay {self.relay_id}: on")
 
-        time.sleep(self.delay)
+        time.sleep(self.delay_in_seconds)
 
         self.client.publish(
             self.laser_channel, payload="off", qos=0, retain=False
         )
-        relay_lib_seeed.relay_off(self.relay)
-        logging.info(f"{self.name} laser relay {self.relay}: off")
+        relay_lib_seeed.relay_off(self.relay_id)
+        self.logger.info(f"{self.username} laser relay {self.relay_id}: off")
