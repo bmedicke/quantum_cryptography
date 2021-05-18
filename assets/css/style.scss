@@ -14,7 +14,7 @@ font-family: 'Montserrat', sans-serif;
 }
 
 #main-content{
-  &:first-child{
+  p:first-child{
   display: none;
   }
 }
