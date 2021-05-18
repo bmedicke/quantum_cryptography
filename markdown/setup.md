@@ -161,6 +161,10 @@ Set the default code formatter to black:
 ## more JupyterLab extensions
 
 ```sh
+# get a newer nodejs version for the extensions:
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt install nodejs -y
+
 # Git:
 pip install --upgrade jupyterlab jupyterlab-git
 jupyter labextension install @jupyterlab/git
