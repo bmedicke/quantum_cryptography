@@ -4,5 +4,5 @@
 @import "{{ site.theme }}";
 
 .header {
-  background-image: url("{{ site.title }}/media/logo.svg");
+  background-image: url("{{ site.baseurl }}/media/logo.svg");
 }
