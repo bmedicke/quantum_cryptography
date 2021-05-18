@@ -9,9 +9,20 @@ font-family: 'Montserrat', sans-serif;
 }
 
 .header {
+  &::before{
+  content: "";
+  position: absolute;
+  top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #cccccc20;
+  }
   font-family: 'Montserrat', sans-serif;
   background-image: url("{{ site.baseurl }}/media/logo.svg");
 }
+
+
 
 #main-content{
   p:first-child{
