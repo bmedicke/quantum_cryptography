@@ -10,16 +10,19 @@ font-family: 'Montserrat', sans-serif;
 
 .header {
   &::before{
-  content: "";
-  position: absolute;
-  top: 0;
+    content: "";
+    position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #cccccc20;
+    background: linear-gradient(90deg, #000000, transparent,#000000fa);
   }
-  font-family: 'Montserrat', sans-serif;
-  background-image: url("{{ site.baseurl }}/media/logo.svg");
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(/quantum_cryptography/media/logo.svg);
+    position: relative;
+    background-size: cover;
+    background-position: center center;
 }
 
 
