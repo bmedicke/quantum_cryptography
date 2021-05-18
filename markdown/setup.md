@@ -12,6 +12,7 @@
     * [Docker & MQTT broker](#docker--mqtt-broker)
 * [configuring the code formatter](#configuring-the-code-formatter)
 * [configuring shortcuts](#configuring-shortcuts)
+* [more JupyterLab extensions](#more-jupyterlab-extensions)
 * [used libraries](#used-libraries)
 
 <!-- vim-markdown-toc -->
@@ -155,6 +156,20 @@ Set the default code formatter to black:
   ]
 }
 
+```
+
+## more JupyterLab extensions
+
+```sh
+# Git:
+pip install --upgrade jupyterlab jupyterlab-git
+jupyter labextension install @jupyterlab/git
+
+# Spellchecker:
+jupyter labextension install @ijmbarr/jupyterlab_spellchecker
+
+# Vim:
+jupyter labextension install @axlair/jupyterlab_vim
 ```
 
 ## used libraries
