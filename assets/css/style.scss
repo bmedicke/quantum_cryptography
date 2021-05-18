@@ -9,12 +9,6 @@ font-family: 'Montserrat', sans-serif;
 }
 
 .header {
-  .inner{
-  h2 {
-  background: #00000033;
-  }
-    }
-  
   &::before{
     content: "";
     position: absolute;
