@@ -9,9 +9,12 @@ font-family: 'Montserrat', sans-serif;
 }
 
 .header {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("{{ site.baseurl }}/media/logo.svg");
+}
+
+#main-content{
   &:first-child{
   display: none;
   }
-  font-family: 'Montserrat', sans-serif;
-  background-image: url("{{ site.baseurl }}/media/logo.svg");
 }
