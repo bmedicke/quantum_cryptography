@@ -1,10 +1,22 @@
+r"""
+Provides a class that can send a bit with a laser connected via a relay.
+
+Handles logging and MQTT communication over the classical channel.
+"""
+
+# standard library:
 import time
 import logging
+
+# third party:
 import paho.mqtt.client as mqtt
 from . import relay_lib_seeed
 
 
 class Laser:
+    """
+    Represents a sinle laser that is controlled by a relay.
+    """
     # executed at import:
     logger = logging.getLogger("__Laser__")
     formatter = logging.Formatter("%(asctime)s: %(levelname)s - %(message)s")
@@ -23,7 +35,9 @@ class Laser:
         mqtt_broker_ip="localhost",
         log_level="INFO",
     ):
-
+        """
+        Construct a Laser.
+        """
         self.username = username
         self.relay_id = relay_id
         self.delay_in_seconds = delay_in_seconds
@@ -55,6 +69,9 @@ class Laser:
         self.logger.warning(f"mqtt: {self.username} disconnected")
 
     def trigger(self):
+        """
+        Trigger the laser and communicate it over the classical channel.
+        """
         self.logger = logging.getLogger("__Laser__")
         self.client.publish(
             self.laser_channel, payload="on", qos=0, retain=False
