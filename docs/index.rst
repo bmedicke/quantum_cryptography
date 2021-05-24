@@ -6,13 +6,12 @@
 qcrypt
 ======
 
-.. automodule:: qcrypt.hardware.laser
-   :members:
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+.. autosummary::
+    :toctree: _autosummary
+    :recursive:
+    :nosignatures:
 
-
+    qcrypt
 
 Indices and tables
 ==================
