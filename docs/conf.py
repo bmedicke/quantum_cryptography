@@ -18,7 +18,7 @@ print(sys.path)
 
 # -- Project information -----------------------------------------------------
 
-project = 'Quantum Cryptography Demonstration'
+project = 'qcrypt'
 copyright = '2021, Benedikt, Cevik, Medicke, Nagel'
 author = 'Benedikt, Cevik, Medicke, Nagel'
 
