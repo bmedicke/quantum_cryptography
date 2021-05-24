@@ -6,6 +6,8 @@
 qcrypt
 ======
 
+.. automodule:: qcrypt.hardware.laser
+   :members:
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
