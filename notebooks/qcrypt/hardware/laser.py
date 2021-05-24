@@ -10,7 +10,11 @@ import logging
 
 # third party:
 import paho.mqtt.client as mqtt
-from . import relay_lib_seeed
+
+try:
+    from . import relay_lib_seeed
+except Exception as e:
+    print(f'{type(e).__name__}: {e},')
 
 
 class Laser:
