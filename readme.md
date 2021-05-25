@@ -35,6 +35,7 @@ Here's a quick breakdown of what to find where in the repository:
 * [Setup](markdown/setup.md) 🧑🏻‍💻 installation instructions for the software and required services
 * [Notebooks](notebooks) 🪐 contains the actual JupyterLab Notebooks for Alice, Bob and Eve
 * [Guidelines](markdown/guidelines.md) ✒️  coding and contribution guidelines
+* [qcrypt docs](https://bmedicke.github.io/quantum_cryptography) 📜 documentation for the quantum crypto library
 
 ## frequently asked questions
 
