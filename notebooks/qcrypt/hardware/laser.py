@@ -10,13 +10,21 @@ import logging
 
 # third party:
 import paho.mqtt.client as mqtt
-from . import relay_lib_seeed
+
+try:
+    from . import relay_lib_seeed
+
+    hardware_imports = True
+except Exception as e:
+    print(f"{type(e).__name__}: {e}")
+    hardware_imports = False
 
 
 class Laser:
     """
     Represents a sinle laser that is controlled by a relay.
     """
+
     # executed at import:
     logger = logging.getLogger("__Laser__")
     formatter = logging.Formatter("%(asctime)s: %(levelname)s - %(message)s")
@@ -52,6 +60,11 @@ class Laser:
         )
         self.logger.debug(f"{username} mqtt_broker_ip: {mqtt_broker_ip}")
 
+        if not hardware_imports:
+            self.logger.error(
+                "failed to import required hardware modules: continuing in simulation mode."
+            )
+
         self.mqtt_broker_ip = mqtt_broker_ip
         self.log_level = log_level
 
@@ -76,7 +89,10 @@ class Laser:
         self.client.publish(
             self.laser_channel, payload="on", qos=0, retain=False
         )
-        relay_lib_seeed.relay_on(self.relay_id)
+
+        if hardware_imports:
+            relay_lib_seeed.relay_on(self.relay_id)
+
         self.logger.info(f"{self.username} laser relay {self.relay_id}: on")
 
         time.sleep(self.delay_in_seconds)
@@ -84,5 +100,8 @@ class Laser:
         self.client.publish(
             self.laser_channel, payload="off", qos=0, retain=False
         )
-        relay_lib_seeed.relay_off(self.relay_id)
+
+        if hardware_imports:
+            relay_lib_seeed.relay_off(self.relay_id)
+
         self.logger.info(f"{self.username} laser relay {self.relay_id}: off")
