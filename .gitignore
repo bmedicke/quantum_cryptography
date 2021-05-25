@@ -74,6 +74,7 @@ instance/
 # Sphinx documentation
 docs/doctrees
 docs/html/_sources
+doc-scripts/source/_autosummary
 *.inv
 
 # PyBuilder
