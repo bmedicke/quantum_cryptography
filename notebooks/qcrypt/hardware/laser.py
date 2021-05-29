@@ -14,10 +14,10 @@ import paho.mqtt.client as mqtt
 try:
     from . import relay_lib_seeed
 
-    hardware_imports = True
-except Exception as e:
-    print(f"{type(e).__name__}: {e}")
-    hardware_imports = False
+    HARDWARE_IMPORTS = True
+except ModuleNotFoundError as exception:
+    print(f"{type(exception).__name__}: {exception}")
+    HARDWARE_IMPORTS = False
 
 
 class Laser:
@@ -60,9 +60,10 @@ class Laser:
         )
         self.logger.debug(f"{username} mqtt_broker_ip: {mqtt_broker_ip}")
 
-        if not hardware_imports:
+        if not HARDWARE_IMPORTS:
             self.logger.error(
-                "failed to import required hardware modules: continuing in simulation mode."
+                "failed to import required hardware modules: "
+                "continuing in simulation mode."
             )
 
         self.mqtt_broker_ip = mqtt_broker_ip
@@ -76,9 +77,15 @@ class Laser:
         self.client.loop_start()
 
     def on_connect(self, client, userdata, flags, rc):
+        """
+        called on MQTT connection
+        """
         self.logger.info(f"mqtt: {self.username} connected")
 
     def on_disconnect(self, client, userdata, rc):
+        """
+        called on MQTT disconnection
+        """
         self.logger.warning(f"mqtt: {self.username} disconnected")
 
     def trigger(self):
@@ -90,7 +97,7 @@ class Laser:
             self.laser_channel, payload="on", qos=0, retain=False
         )
 
-        if hardware_imports:
+        if HARDWARE_IMPORTS:
             relay_lib_seeed.relay_on(self.relay_id)
 
         self.logger.info(f"{self.username} laser relay {self.relay_id}: on")
@@ -101,7 +108,7 @@ class Laser:
             self.laser_channel, payload="off", qos=0, retain=False
         )
 
-        if hardware_imports:
+        if HARDWARE_IMPORTS:
             relay_lib_seeed.relay_off(self.relay_id)
 
         self.logger.info(f"{self.username} laser relay {self.relay_id}: off")
