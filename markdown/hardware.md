@@ -15,4 +15,4 @@
 
 
 # Motor current setting
-The motor voltage for the stepper driver is set at 0.55V. To increase the voltage you have to turn the screw on the stepper driver counter clockwise.
+The motor voltage for the stepper driver is set at 0.41V. To increase the voltage you have to turn the screw on the stepper driver clockwise.
