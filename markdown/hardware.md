@@ -12,3 +12,7 @@
 | 4               | -45°                     | 2             | 45°                    | 220 µW         | low            |
 | 5               | 90°                      | 1             | 0°                     | 240 µW         | low            |
 | 5               | 90°                      | 2             | 45°                    | 475 µW         | mid-low        |
+
+
+# Motor current setting
+The motor voltage for the stepper driver is set at 0.55V. To increase the voltage you have to turn the screw on the stepper driver counter clockwise.
