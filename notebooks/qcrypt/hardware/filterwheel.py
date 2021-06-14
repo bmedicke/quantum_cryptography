@@ -32,7 +32,7 @@ class Filterwheel:
         username="Alice",
         dir_pin=26,
         step_pin=21,
-        delay_in_seconds=0.002,
+        delay_in_seconds=0.0025,
         mqtt_broker_ip="localhost",
         log_level="INFO",
     ):
