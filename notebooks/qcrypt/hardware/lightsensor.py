@@ -48,7 +48,7 @@ class Lightsensor:
                 self.device, self.baud_rate, timeout=self.timeout
             )
         except serial.SerialException:
-            self.logger.error("Connection could not be established")
+            self.logger.error("Serial connection could not be established")
 
     # resets buffer and waits until it is filled up 30 and prints
     def getValuesArray(self):
