@@ -1,6 +1,7 @@
 # standard libraries:
 import time
 import logging
+import enum
 
 # third party:
 import paho.mqtt.client as mqtt
@@ -12,6 +13,13 @@ try:
 except ModuleNotFoundError as exception:
     print(f"{type(exception).__name__}: {exception}")
     HARDWARE_IMPORTS = False
+
+
+class Orientation(enum.IntEnum):
+    LEFT = 0  # -45°.
+    VERTICAL = 1  # 0°.
+    RIGHT = 2  # 45°.
+    HORIZONTAL = 3  # 90°.
 
 
 class Filterwheel:
@@ -46,6 +54,7 @@ class Filterwheel:
         self.delay_in_seconds = delay_in_seconds
         self.mqtt_broker_ip = mqtt_broker_ip
         self.log_level = log_level
+        self.orientation = Orientation.VERTICAL
 
         self.logger.setLevel(log_level)
 
@@ -60,7 +69,31 @@ class Filterwheel:
                 "### Continuing in simulation mode ... ###"
             )
 
-    def rotate(self, clockwise=True, steps=50):
+    def rotate_to(self, orientation):
+        start = self.orientation
+        stop = orientation
+        print(start, "-->", stop)
+        if start == stop:
+            # print(" nothing to do, yay!")
+            pass
+        elif abs(start - stop) == 2:
+            print(" two in any")
+        else:
+            diff = abs(start - stop)
+            if diff == 1:
+                if start > stop:
+                    print(" right")
+                else:
+                    print(" left")
+            if diff == 3:
+                if start < stop:
+                    print(" right")
+                else:
+                    print(" left")
+                    
+        self.orientation = orientation
+
+    def _rotate(self, clockwise=True, steps=50):
         """
         Rotates in "dir" direction "steps" time
         """
