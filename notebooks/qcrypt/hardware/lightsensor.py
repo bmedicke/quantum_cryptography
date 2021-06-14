@@ -46,9 +46,12 @@ class Lightsensor:
         except serial.SerialException:
             self.logger.error("Connection could not be established")
        
-    def getValues(self):
-        if ser.in_waiting > 0:
-            return self.ser.readline().decode("utf-8").rstrip()
+    def getValuesArray(self):
+        self.ser.reset_input_buffer()
+        while(self.ser.in_waiting < 30):
+            pass
+        print(self.ser.in_waiting)
+        return self.ser.readline().decode("utf-8").rstrip().split(",\t")
             
 
    
