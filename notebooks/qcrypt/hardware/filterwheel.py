@@ -32,7 +32,6 @@ class Filterwheel:
         username="Alice",
         dir_pin=26,
         step_pin=21,
-        step_count=50,
         delay_in_seconds=0.002,
         mqtt_broker_ip="localhost",
         log_level="INFO",
@@ -44,7 +43,6 @@ class Filterwheel:
         self.username = username
         self.dir_pin = dir_pin
         self.step_pin = step_pin
-        self.step_count = step_count
         self.delay_in_seconds = delay_in_seconds
         self.mqtt_broker_ip = mqtt_broker_ip
         self.log_level = log_level
@@ -68,7 +66,7 @@ class Filterwheel:
         """
 
         if HARDWARE_IMPORTS:
-            GPIO.output(self.dir_pin, dir)
+            GPIO.output(self.dir_pin, clockwise)
 
             for x in range(steps):
                 GPIO.output(self.step_pin, GPIO.HIGH)
