@@ -59,6 +59,7 @@ class Filterwheel:
         self.logger.setLevel(log_level)
 
         if HARDWARE_IMPORTS:
+            GPIO.setwarnings(False)
             GPIO.setmode(GPIO.BCM)
             GPIO.setup(dir_pin, GPIO.OUT)
             GPIO.setup(step_pin, GPIO.OUT)
