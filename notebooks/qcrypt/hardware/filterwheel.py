@@ -75,22 +75,26 @@ class Filterwheel:
         stop = orientation
         print(start, "-->", stop)
         if start == stop:
-            # print(" nothing to do, yay!")
-            pass
+            print("no need to rotate")
         elif abs(start - stop) == 2:
-            print(" two in any")
+            print("rotating 180°")
+            self._rotate(clockwise=True, steps=100)
         else:
             diff = abs(start - stop)
             if diff == 1:
                 if start > stop:
-                    print(" right")
+                    print("rotating right")
+                    self._rotate(clockwise=True)
                 else:
-                    print(" left")
+                    print("rotating left")
+                    self._rotate(clockwise=False)
             if diff == 3:
                 if start < stop:
-                    print(" right")
+                    print("rotating right")
+                    self._rotate(clockwise=True)
                 else:
-                    print(" left")
+                    print("rotating left")
+                    self._rotate(clockwise=False)
                     
         self.orientation = orientation
 
