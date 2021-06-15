@@ -56,7 +56,8 @@ class Lightsensor:
         while self.ser.in_waiting < 30:
             pass
         print("ser_in_waiting: " + str(self.ser.in_waiting))
-        return self.ser.readline().decode("utf-8").rstrip().split(",\t")
+        print(self.ser.readline().decode("utf-8").split(",\t"))
+        return self.ser.readline().decode("utf-8").split(",\t")
 
     def getHighLow(self):
         values = self.getValuesArray()
@@ -66,9 +67,14 @@ class Lightsensor:
         high_low = []
         print(values)
         if len(values) == 2:
-            for i in range(len(values)):
-                if int(values[i]) < 100:
-                    high_low.append("High")
-                elif int(values[i]) >= 100:
-                    high_low.append("Low")
+            try:
+                for i in range(len(values)):
+                    if int(values[i]) < 100:
+                        high_low.append("High")
+                    elif int(values[i]) >= 100:
+                        high_low.append("Low")
+            except ValueError:
+                print(ValueError)
+                return False
+
         return high_low
