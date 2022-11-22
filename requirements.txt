@@ -28,7 +28,7 @@ Jinja2==3.0.1
 json5==0.9.5
 jsonschema==3.2.0
 jupyter-client==6.1.12
-jupyter-core==4.7.1
+jupyter-core==4.11.2
 jupyter-server==1.17.0
 jupyterlab==3.0.17
 jupyterlab-code-formatter==1.4.10
